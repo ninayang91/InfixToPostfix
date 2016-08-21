@@ -24,3 +24,13 @@ Convert an infix math expression to postfix
 		Operands: immediately output
 		")":Pop stack symbols until a "(" appears
 		Operators: Pop all stack symbols until a symbol of lower precedence, then push the operator
+
+//Scan the string, if an operand is met, pop all the operands until operands lower precedence
+
+//if ( is met, push into stack
+
+//if +- is met, pop all operands until ) or empty, push this operand into stack
+
+//if */^ is met, pop all operands until +-) or empty, push this operand into stack
+
+//if ) is met, pop all operands until ) or empty, pop the (
